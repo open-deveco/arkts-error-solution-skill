@@ -36,7 +36,7 @@ This skill provides solutions for common ArkTS compilation errors and type misma
 |------------|-----------|
 | Notification type error | Cast to `number` type |
 | Window type error | Use callback pattern for `getLastWindow` |
-| AppStorage type error | Use `@StorageLink` and `setOrCreate` |
+| AppStorage type error | Use `@StorageLink` with `LocalStorage` or `AppStorage.setAndLink` (avoid `setOrCreate`) |
 | Object spread error | Explicitly type objects |
 | @StorageLink default value error | Add `= undefined` or specific default value |
 | Object literal interface error | Define interface before using object literal |
