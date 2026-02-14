@@ -29,6 +29,9 @@ This skill provides solutions for common ArkTS compilation errors and type misma
 | ESObject Type Errors | Restricted usage of ESObject type |
 | Resource Conversion Errors | Resource to string/number conversion errors |
 | Unused Variable Warnings | Declared but never used variables |
+| IDataSource Type Errors | LazyForEach requires IDataSource implementation |
+| Duplicate Entry Errors | Multiple @Entry decorators in same file |
+| Possibly Null Errors | Object possibly null when accessing properties |
 
 ## Quick Reference
 
@@ -52,6 +55,9 @@ This skill provides solutions for common ArkTS compilation errors and type misma
 | ESObject type error | Use `ESModule` or specific types instead of `ESObject` |
 | Resource conversion error | Use Resource directly in UI components or use ResourceManager |
 | Unused variable warning | Use console.info/hilog or delete unused variable |
+| IDataSource type error | Implement IDataSource interface for LazyForEach |
+| Duplicate Entry error | Remove extra @Entry, use @Component for child components |
+| Possibly Null error | Use !== null check or optional chaining |
 
 ## Detailed Error Solutions
 
@@ -126,6 +132,22 @@ This skill provides solutions for common ArkTS compilation errors and type misma
 ### Unused Variable Warnings
 - [Unused Variable Warning](./reference/unused_variable_warnings.md)
 - [Code Example](./assets/UnusedVariableWarning.ets)
+
+### IDataSource Type Errors
+- [IDataSource Type Error](./reference/idata_source_errors.md)
+- [Code Example](./assets/IDataSourceError.ets)
+
+### Duplicate Entry Errors
+- [Duplicate Entry Error](./reference/duplicate_entry_errors.md)
+- [Code Example](./assets/DuplicateEntryError.ets)
+
+### Possibly Null Errors
+- [Possibly Null Error](./reference/possibly_null_errors.md)
+- [Code Example](./assets/PossiblyNullError.ets)
+
+### Window Rect/Size Type Errors
+- [Window Rect/Size Type Error](./reference/window_rect_size_errors.md)
+- [Code Example](./assets/WindowRectSizeError.ets)
 
 ## Related Resources
 
